@@ -21,6 +21,7 @@ namespace WhtDay3NameSpace
 
     public class WhatDay3
     {
+        public static int[] DaysInLeapMonths = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         public static int[] DaysInMonths = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     }
 
@@ -65,20 +66,42 @@ namespace WhtDay3NameSpace
 
                 //--.
                 int monthNum = 0;
+                
 
-                //--.
-                foreach( int daysInMonth in WhatDay3.DaysInMonths )
+                if( isLeapYear )
                 {
-                    if (daynum <= daysInMonth)
+                    //--.
+                    foreach (int daysInMonth in WhatDay3.DaysInLeapMonths)
                     {
-                        break;
-                    }
-                    else
-                    {
-                        daynum -= daysInMonth;
-                        monthNum++;
+                        if (daynum <= daysInMonth)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            daynum -= daysInMonth;
+                            monthNum++;
+                        }
                     }
                 }
+                else
+                {
+                    //--.
+                    foreach (int daysInMonth in WhatDay3.DaysInMonths)
+                    {
+                        if (daynum <= daysInMonth)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            daynum -= daysInMonth;
+                            monthNum++;
+                        }
+                    }
+                }
+
+
 
 
 
