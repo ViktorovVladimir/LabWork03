@@ -1,0 +1,15 @@
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\obj\Debug\net8.0\ShootOnTarget.GeneratedMSBuildEditorConfig.editorconfig
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\obj\Debug\net8.0\ShootOnTarget.AssemblyInfoInputs.cache
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\obj\Debug\net8.0\ShootOnTarget.AssemblyInfo.cs
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\obj\Debug\net8.0\ShootOnTarget.csproj.CoreCompileInputs.cache
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\obj\Debug\net8.0\ShootOnTarget.sourcelink.json
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\bin\Debug\net8.0\ShootOnTarget.exe
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\bin\Debug\net8.0\ShootOnTarget.deps.json
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\bin\Debug\net8.0\ShootOnTarget.runtimeconfig.json
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\bin\Debug\net8.0\ShootOnTarget.dll
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\bin\Debug\net8.0\ShootOnTarget.pdb
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\obj\Debug\net8.0\ShootOnTarget.dll
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\obj\Debug\net8.0\refint\ShootOnTarget.dll
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\obj\Debug\net8.0\ShootOnTarget.pdb
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\obj\Debug\net8.0\ShootOnTarget.genruntimeconfig.cache
+D:\Labs\LabWork03\Lab04\ShootOnTarget\ShootOnTarget\obj\Debug\net8.0\ref\ShootOnTarget.dll

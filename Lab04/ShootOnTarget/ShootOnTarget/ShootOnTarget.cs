@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Net.Http.Headers;
+using System.Net.NetworkInformation;
+
+
+//ВАРИАНТ #1
 
 
 namespace ShootOnTargetNameSpace
@@ -31,9 +36,79 @@ namespace ShootOnTargetNameSpace
 
     class ShootOnTarget
     {
+        public static double rX, rY, rCenterX, rCenterY, r1, r2;
+        public static uint uBonus;
+
+        //--.
+        public static void setOptions()
+        {
+            rCenterX = 0; rCenterY = 0;
+            r1 = 1; r2 = 2;
+            uBonus = 0;
+        }
+
+        //--.
+        public static void setShootPoint()
+        {
+            //--.
+            Console.Write("Please enter real value X-coorditate shoot: ");
+            rX = double.Parse(Console.ReadLine());
+            //--.
+            Console.Write("Please enter real value Y-coorditate shoot: ");
+            rY = double.Parse(Console.ReadLine());
+        }
+
+
+        public static uint checkBon(double x, double y, double centerX, double centerY, uint bon, double radius)
+        {
+            decimal c1 = (decimal)((x - centerX) * (x - centerX) + (y - centerY) * (y - centerY));
+            decimal c2 = (decimal)(r1 * r1);
+
+            return c1 <= c2 ? (uint)bon : 0;
+        }
+
+        //--.
+        public static uint getBonusFromShoot()
+        {
+            uint bonus2 = 0;
+            uint bonus1 = checkBon(rX, rY, rCenterX, rCenterY, 10, r1);
+            if (bonus1 == 0)
+            {
+                bonus2 = checkBon(rX, rY, rCenterX, rCenterY, 5, r2);
+            }
+            return bonus1 + bonus2;
+        }
+
 
         public static void Main()
         {
+
+            //--. Устанавливаем начальные настройки
+            setOptions();
+            
+            //--.
+            Console.Write("Please enter count shoot's on target (1 - 9): ");
+            int iCountShoots = int.Parse( Console.ReadLine() );
+
+            do
+            {
+                //--. Запрашиваем координаты выстрела
+                setShootPoint();
+
+                //--. Проверяем куда попали и возвращаем кол-во очков
+                //--. Делаем подсчёт очков
+                uBonus += getBonusFromShoot();
+                
+                //--. Декремент патронов
+                iCountShoots--;
+            } while( iCountShoots > 0 );
+
+            //--. Вывод на экран сумма очков (баллов)
+            //--.
+            Console.WriteLine("Сумма набранных очков {0}", uBonus);
+
+            /*
+
             //--.
             try
             {
@@ -43,17 +118,6 @@ namespace ShootOnTargetNameSpace
                 bool isLeapYear = (yearNum % 4 == 0) && (yearNum % 100 != 0) || (yearNum % 400 == 0);
                 int maxDayNum = isLeapYear ? 366 : 365;
 
-                /*
-                //--.
-                if( isLeapYear ) 
-                {   
-                    Console.WriteLine("IS a leap year");
-                }   
-                else
-                {   
-                    Console.WriteLine(" is NOT a leap year");
-                }   
-                */
                 string sOtvet = isLeapYear ? "IS a leap year" : " is NOT a leap year";
                 Console.WriteLine(sOtvet);
 
@@ -121,7 +185,7 @@ namespace ShootOnTargetNameSpace
             {
                 Console.WriteLine("Day out of range: {0}", caugh);
             }
-
+            */
         }
     }
 }
