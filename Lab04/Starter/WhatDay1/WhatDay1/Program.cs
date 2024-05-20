@@ -26,12 +26,14 @@ namespace WhtDay1NameSpace
         December
     }
 
+    
 
 
-    class WhatDay
+
+    public class WhatDay
     {
-        uint DaysInMonts;
-        
+        public static int[] DaysInMonths = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+
         /*
         public static Distance SumDist(Distance d1, Distance d2)
         {
@@ -51,6 +53,9 @@ namespace WhtDay1NameSpace
 
     class Program
     {
+
+        
+
         public static void Main()
         {
             //Distance d1, d2, d3;
@@ -60,6 +65,21 @@ namespace WhtDay1NameSpace
             //--.
             int monthNum = 0;
             
+            //--.
+            foreach( int daysInMonth in WhatDay.DaysInMonths)
+            {
+                if( daynum <= daysInMonth )
+                {
+                    break;
+                }
+                else
+                {
+                    daynum -= daysInMonth;
+                    monthNum++;
+                }
+            }
+
+            /*
             //--.
             if( daynum <= 31)       //January
             {        
@@ -183,6 +203,7 @@ namespace WhtDay1NameSpace
 
 
         End:
+            */
 
             /*
             string monthName;
