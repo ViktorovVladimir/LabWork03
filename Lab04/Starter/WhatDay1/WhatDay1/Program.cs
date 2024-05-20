@@ -10,6 +10,24 @@ namespace WhtDay1NameSpace
     }
 
 
+    enum MonthName
+    {
+        January,
+        February,
+        March,
+        April,
+        May,
+        June,
+        July,
+        August,
+        September,
+        October,
+        November,
+        December
+    }
+
+
+
     class WhatDay
     {
         uint DaysInMonts;
@@ -166,6 +184,7 @@ namespace WhtDay1NameSpace
 
         End:
 
+            /*
             string monthName;
 
             switch( monthNum )
@@ -211,6 +230,10 @@ namespace WhtDay1NameSpace
                     break;
 
             }
+            */
+
+            MonthName temp = (MonthName)monthNum;
+            string monthName = temp.ToString();
 
             //--.
             Console.WriteLine("{0} {1}", daynum, monthName);
