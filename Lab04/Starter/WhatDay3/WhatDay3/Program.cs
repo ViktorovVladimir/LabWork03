@@ -32,11 +32,15 @@ namespace WhtDay3NameSpace
             //--.
             try
             {
+                //--.
+                Console.Write("Please enter the year: ");
+                int yearNum = int.Parse(Console.ReadLine());
+                //--.                
                 Console.WriteLine("Please enter a day number between 1 and 365: ");
                 //-.
                 int daynum = int.Parse(Console.ReadLine());
                 //--.
-                if (daynum < 1 || daynum > 365)
+                if( daynum < 1 || daynum > 365 )
                 {
                     throw new ArgumentOutOfRangeException("Day out of range");
                 }
