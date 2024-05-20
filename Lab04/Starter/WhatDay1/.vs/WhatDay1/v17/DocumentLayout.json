@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Labs\\LabWork03\\LabWork03\\Lab04\\Starter\\WhatDay1\\",
+  "WorkspaceRootPath": "D:\\Labs\\LabWork03\\Lab04\\Starter\\WhatDay1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37F8864B-198A-4E07-8824-0D51AEC13521}|WhatDay1\\WhatDay1.csproj|d:\\labs\\labwork03\\labwork03\\lab04\\starter\\whatday1\\whatday1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37F8864B-198A-4E07-8824-0D51AEC13521}|WhatDay1\\WhatDay1.csproj|d:\\labs\\labwork03\\lab04\\starter\\whatday1\\whatday1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37F8864B-198A-4E07-8824-0D51AEC13521}|WhatDay1\\WhatDay1.csproj|solutionrelative:whatday1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Labs\\LabWork03\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\Program.cs",
+              "DocumentMoniker": "D:\\Labs\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\Program.cs",
               "RelativeDocumentMoniker": "WhatDay1\\Program.cs",
-              "ToolTip": "D:\\Labs\\LabWork03\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\Program.cs",
+              "ToolTip": "D:\\Labs\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\Program.cs",
               "RelativeToolTip": "WhatDay1\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Labs\\LabWork03\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\WhatDay1.csproj": {}
+    "D:\\Labs\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\WhatDay1.csproj": {}
   },
   "projects": {
-    "D:\\Labs\\LabWork03\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\WhatDay1.csproj": {
+    "D:\\Labs\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\WhatDay1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Labs\\LabWork03\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\WhatDay1.csproj",
+        "projectUniqueName": "D:\\Labs\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\WhatDay1.csproj",
         "projectName": "WhatDay1",
-        "projectPath": "D:\\Labs\\LabWork03\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\WhatDay1.csproj",
+        "projectPath": "D:\\Labs\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\WhatDay1.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Labs\\LabWork03\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\obj\\",
+        "outputPath": "D:\\Labs\\LabWork03\\Lab04\\Starter\\WhatDay1\\WhatDay1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
