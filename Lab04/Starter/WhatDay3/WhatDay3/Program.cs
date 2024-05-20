@@ -31,14 +31,28 @@ namespace WhtDay3NameSpace
         {
             //--.
             try
-            {
+            {   
                 //--.
                 Console.Write("Please enter the year: ");
                 int yearNum = int.Parse(Console.ReadLine());
+                bool isLeapYear = (yearNum % 4 == 0) && (yearNum % 100 != 0) || ( yearNum % 400 == 0 );
+                
+                //--.
+                if( isLeapYear ) 
+                {   
+                    Console.WriteLine("IS a leap year");
+                }   
+                else
+                {   
+                    Console.WriteLine(" is NOT a leap year");
+                }   
+                    
                 //--.                
                 Console.WriteLine("Please enter a day number between 1 and 365: ");
-                //-.
-                int daynum = int.Parse(Console.ReadLine());
+                
+                //--.
+                int daynum = int.Parse( Console.ReadLine() );
+                
                 //--.
                 if( daynum < 1 || daynum > 365 )
                 {
@@ -49,7 +63,7 @@ namespace WhtDay3NameSpace
                 int monthNum = 0;
 
                 //--.
-                foreach (int daysInMonth in WhatDay3.DaysInMonths)
+                foreach( int daysInMonth in WhatDay3.DaysInMonths )
                 {
                     if (daynum <= daysInMonth)
                     {
