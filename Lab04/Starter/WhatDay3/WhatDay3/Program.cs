@@ -36,7 +36,7 @@ namespace WhtDay3NameSpace
                 Console.Write("Please enter the year: ");
                 int yearNum = int.Parse(Console.ReadLine());
                 bool isLeapYear = (yearNum % 4 == 0) && (yearNum % 100 != 0) || ( yearNum % 400 == 0 );
-                int maxDayNum;
+                int maxDayNum = isLeapYear ? 366 : 365;
 
                 /*
                 //--.
@@ -49,19 +49,16 @@ namespace WhtDay3NameSpace
                     Console.WriteLine(" is NOT a leap year");
                 }   
                 */
-
                 string sOtvet = isLeapYear ? "IS a leap year" : " is NOT a leap year";
                 Console.WriteLine(sOtvet);
-
-
-                //--.                
-                Console.WriteLine("Please enter a day number between 1 and 365: ");
                 
+                //--.                
+                Console.WriteLine("Please enter a day number between 1 and {0}: ", maxDayNum);
                 //--.
                 int daynum = int.Parse( Console.ReadLine() );
                 
                 //--.
-                if( daynum < 1 || daynum > 365 )
+                if( daynum < 1 || daynum > maxDayNum )
                 {
                     throw new ArgumentOutOfRangeException("Day out of range");
                 }
