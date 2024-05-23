@@ -59,7 +59,7 @@ namespace ShootOnTargetNameSpace
         }
 
 
-        public static uint checkBon(double x, double y, double centerX, double centerY, uint bon, double radius)
+        public static uint getScoring(double x, double y, double centerX, double centerY, uint bon, double radius)
         {
             decimal c1 = (decimal)((x - centerX) * (x - centerX) + (y - centerY) * (y - centerY));
             decimal c2 = (decimal)(r1 * r1);
@@ -71,10 +71,10 @@ namespace ShootOnTargetNameSpace
         public static uint getBonusFromShoot()
         {
             uint bonus2 = 0;
-            uint bonus1 = checkBon(rX, rY, rCenterX, rCenterY, 10, r1);
+            uint bonus1 = getScoring(rX, rY, rCenterX, rCenterY, 10, r1);
             if (bonus1 == 0)
             {
-                bonus2 = checkBon(rX, rY, rCenterX, rCenterY, 5, r2);
+                bonus2 = getScoring(rX, rY, rCenterX, rCenterY, 5, r2);
             }
             return bonus1 + bonus2;
         }
